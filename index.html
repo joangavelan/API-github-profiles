@@ -9,29 +9,34 @@
 </head>
 <body>
   <div class="container">
-    <div class="logo-box">
+    <div class="logo-wrapper">
       <img src="images/github-mark.png" alt="github-mark">
       <h1>Profiles</h1>
     </div>
     <form class="search-form">
-      <input type="search" id="search">
+      <input type="search" id="search" placeholder="Username...">
       <button type="submit"><i class="fas fa-search"></i></button>
+      <p class="error-message">User not found</p>
     </form>
     <div class="profile">
-      <div class="profile-photo-wrapper">
-        <img class="profile-photo">
+      <div class="avatar">
+        <img class="profile-picture">
+        <i class="fas fa-globe-americas"></i>
+        <span class="location"></span>
       </div>
       <div class="profile-content">
-        <h3 class="profile-name"></h3>
-        <p class="profile-bio"></p>
+        <div class="profile-desc">
+          <h3 class="profile-name"></h3>
+          <p class="profile-bio"></p>
+        </div>
+        <div class="meta-data">
+          <p>Followers <span class="followers"></span></p>
+          <p>Following <span class="following"></span></p>
+          <p>Repositories <span class="public-repos"></span></p>
+        </div>
+        <ul class="repositories">
+        </ul>
       </div>
-      <div class="meta-data">
-        <span class="followers"></span>
-        <span class="following"></span>
-        <span class="num-repos"></span>
-      </div>
-      <ul class="repositories">
-      </ul>
     </div>
   </div>
   <script src="app.js"></script>
